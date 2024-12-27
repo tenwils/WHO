@@ -1,2 +1,2 @@
-# WHO-api
+# WHO
 Accessing WHO data using API
