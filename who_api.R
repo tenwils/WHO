@@ -25,7 +25,8 @@ life_expect_at_birth <- get.data(url)
 
 # Endpoint: Number of people dying from HIV-related causes. 
 # Indicator = HIV_0000000006
-endpoint <- "HIV_0000000006" # Life expectancy at birth
+endpoint <- "HIV_0000000006" 
 url <- paste0(base_url, "/", endpoint)
 df <- get.data(url)
 
+col_nmes <- dimension_data |> filter(Code %in% toupper(colnames(life_expect_at_birth)))
